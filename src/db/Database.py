@@ -1,7 +1,7 @@
 import os
 import psycopg2
 
-from db.Models import *
+from .Models import * 
 
 class Database:
 
@@ -16,35 +16,34 @@ class Database:
 
     ################################################################################################
 
-    def getEvents(self) -> list[dict]:
+    def getEvents(self) -> list[Event]:
         cursor = self.connection.cursor()
         cursor.execute("SELECT * FROM events;")
         results = cursor.fetchall()
         cursor.close()
-        return [Event(result).__dict__() for result in results]
+        return [Event(result) for result in results]
 
     ################################################################################################
 
-    def getEventById(self, event_id: int) -> dict | None:
+    def getEventById(self, event_id: int) -> Event | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM events e WHERE e.id={event_id};")
         result = cursor.fetchall()
         cursor.close()
         if not result: return None
-        else: return Event(result).__dict__()
+        else: return Event(result)
     
     ################################################################################################
 
-    def insertEvent(self, event_name: str) -> int | None:
-        result: int | None = None
+    def insertEvent(self, event: Event) -> bool:
+        result: bool = False
         cursor = self.connection.cursor()
         try:
             cursor.execute(f"""
-                INSERT INTO events (name) 
-                VALUES ('{event_name}') 
-                RETURNING id;
+                INSERT INTO events (id, name) 
+                VALUES ({event.id}, '{event.name}');
             """)
-            result = cursor.fetchone()[0]
+            result = True
             self.connection.commit()
         except: self.connection.rollback()
         cursor.close()
@@ -53,44 +52,43 @@ class Database:
     
     ################################################################################################
 
-    def getQuizzes(self) -> list[dict]:
+    def getQuizzes(self) -> list[Quiz]:
         cursor = self.connection.cursor()
         cursor.execute("SELECT * FROM quizzes;")
         results = cursor.fetchall()
         cursor.close()
-        return [Quiz(result).__dict__() for result in results]
+        return [Quiz(result) for result in results]
     
     ################################################################################################
 
-    def getQuizById(self, quiz_id: int) -> dict | None:
+    def getQuizById(self, quiz_id: int) -> Quiz | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM quizzes q WHERE q.id={quiz_id};")
         result = cursor.fetchall()
         cursor.close()
         if not result: return None
-        else: return Quiz(result).__dict__()
+        else: return Quiz(result)
     
     ################################################################################################
 
-    def getEventQuizzes(self, event_id: int) -> list[dict]:
+    def getEventQuizzes(self, event_id: int) -> list[Quiz]:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM quizzes q WHERE q.event_id={event_id};")
         results = cursor.fetchall()
         cursor.close()
-        return [Quiz(result).__dict__() for result in results]
+        return [Quiz(result) for result in results]
     
     ################################################################################################
 
-    def insertQuiz(self, event_id: int, year: int) -> int | None:
-        result: int | None = None
+    def insertQuiz(self, quiz: Quiz) -> bool:
+        result: bool = False
         cursor = self.connection.cursor()
         try:
             cursor.execute(f"""
-                INSERT INTO quizzes (event_id, year) 
-                VALUES ({event_id}, {year}) 
-                RETURNING id;
+                INSERT INTO quizzes (id, event_id, year) 
+                VALUES ({quiz.id}, {quiz.event_id}, {quiz.year});
             """)
-            result = cursor.fetchone()[0]
+            result = True
             self.connection.commit()
         except: self.connection.rollback()
         cursor.close()
@@ -98,63 +96,62 @@ class Database:
     
     ################################################################################################
 
-    def getQuestionTypes(self) -> list[dict]:
+    def getQuestionTypes(self) -> list[QuestionType]:
         cursor = self.connection.cursor()
         cursor.execute("SELECT * FROM question_types;")
         results = cursor.fetchall()
         cursor.close()
-        return [QuestionType(result).__dict__() for result in results]
+        return [QuestionType(result) for result in results]
     
     ################################################################################################
 
-    def getQuestionTypeById(self, question_type_id: int) -> dict | None:
+    def getQuestionTypeById(self, question_type_id: int) -> QuestionType | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM question_types t WHERE t.id={question_type_id};")
         result = cursor.fetchall()
         cursor.close()
         if not result: return None
-        else: return QuestionType(result).__dict__()
+        else: return QuestionType(result)
     
     ################################################################################################
 
-    def getQuestions(self) -> list[dict]:
+    def getQuestions(self) -> list[Question]:
         cursor = self.connection.cursor()
         cursor.execute("SELECT * FROM questions;")
         results = cursor.fetchall()
         cursor.close()
-        return [Question(result).__dict__() for result in results]
+        return [Question(result) for result in results]
     
     ################################################################################################
 
-    def getQuestionById(self, question_id: int) -> dict | None:
+    def getQuestionById(self, question_id: int) -> Question | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM questions q WHERE q.id={question_id};")
         result = cursor.fetchall()
         cursor.close()
         if not result: return None
-        else: return Question(result).__dict__()
+        else: return Question(result)
     
     ################################################################################################
 
-    def getQuizQuestions(self, quiz_id: int) -> list[dict]:
+    def getQuizQuestions(self, quiz_id: int) -> list[Question]:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM questions q WHERE q.quiz_id={quiz_id};")
         results = cursor.fetchall()
         cursor.close()
-        return [Question(result).__dict__() for result in results]
+        return [Question(result) for result in results]
     
     ################################################################################################
 
-    def insertQuestion(self, quiz_id: int, type_id: int, text: str) -> int | None:
-        result: int | None = None
+    def insertQuestion(self, question: Question) -> bool:
+        result: bool = False
         cursor = self.connection.cursor()
         try:
             cursor.execute(f"""
-                INSERT INTO questions (quiz_id, type_id, text) 
-                VALUES ({quiz_id}, {type_id}, '{text}') 
-                RETURNING id;
+                INSERT INTO questions (id, quiz_id, type_id, text) 
+                VALUES ({question.id}, {question.quiz_id}, {question.type_id}, '{question.text}');
             """)
-            result = cursor.fetchone()[0]
+            result = True
             self.connection.commit()
         except: self.connection.rollback()
         cursor.close()
@@ -162,36 +159,35 @@ class Database:
     
     ################################################################################################
 
-    def getQuestionAnswers(self, question_id: int) -> list[dict]:
+    def getQuestionAnswers(self, question_id: int) -> list[QuestionAnswer]:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM question_answers a WHERE a.question_id={question_id};")
         results = cursor.fetchall()
         cursor.close()
-        return [QuestionAnswer(result).__dict__() for result in results]
+        return [QuestionAnswer(result) for result in results]
     
     ################################################################################################
 
-    def getQuestionAnswerById(self, question_answer_id: int) -> dict | None:
+    def getQuestionAnswerById(self, question_answer_id: int) -> QuestionAnswer | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM question_answers a WHERE a.id={question_answer_id};")
         result = cursor.fetchall()
         cursor.close()
         if not result: return None
-        else: return QuestionAnswer(result).__dict__() 
+        else: return QuestionAnswer(result)
     
     ################################################################################################
 
-    def insertQuestionAnswer(self, question_id: int, text: str, is_correct: bool) -> int | None:
-        result: int | None = None
+    def insertQuestionAnswer(self, answer: QuestionAnswer) -> bool:
+        result: bool = False
         cursor = self.connection.cursor()
         try:
-            is_correct: str = "true" if is_correct else "false"
+            is_correct: str = "true" if answer.is_correct else "false"
             cursor.execute(f"""
-                INSERT INTO question_answers (question_id, text, is_correct)
-                VALUES ({question_id}, '{text}', {is_correct}) 
-                RETURNING id;
+                INSERT INTO question_answers (id, question_id, text, is_correct)
+                VALUES ({answer.id}, {answer.question_id}, '{answer.text}', {is_correct});
             """)
-            result = cursor.fetchone()[0]
+            result = True 
             self.connection.commit()
         except: self.connection.rollback()
         cursor.close()
@@ -199,35 +195,34 @@ class Database:
 
     ################################################################################################
 
-    def getQuestionImages(self, question_id: int) -> list[dict]:
+    def getQuestionImages(self, question_id: int) -> list[QuestionImage]:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM question_images i WHERE i.question_id={question_id};")
         results = cursor.fetchall()
         cursor.close()
-        return [QuestionImage(result).__dict__() for result in results]
+        return [QuestionImage(result) for result in results]
     
     ################################################################################################
 
-    def getQuestionImageById(self, question_image_id: int) -> dict | None:
+    def getQuestionImageById(self, question_image_id: int) -> QuestionImage | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM question_images i WHERE i.id={question_image_id};")
         result = cursor.fetchall()
         cursor.close()
         if not result: return None
-        else: return QuestionImage(result).__dict__()
+        else: return QuestionImage(result)
     
     ################################################################################################
 
-    def insertQuestionImage(self, question_id: int, path: str) -> int | None:
-        result: int | None = None
+    def insertQuestionImage(self, image: QuestionImage) -> bool:
+        result: bool = False
         cursor = self.connection.cursor()
         try:
             cursor.execute(f"""
-                INSERT INTO question_images (question_id, path)
-                VALUES ({question_id}, '{path}') 
-                RETURNING id;
+                INSERT INTO question_images (id, question_id, path)
+                VALUES ({image.id}, {image.question_id}, '{image.path}');
             """)
-            result = cursor.fetchone()[0]
+            result = True
             self.connection.commit()
         except: self.connection.rollback()
         cursor.close()
@@ -235,35 +230,34 @@ class Database:
 
     ################################################################################################
 
-    def getQuestionSolutions(self, question_id: int) -> list[dict]:
+    def getQuestionSolutions(self, question_id: int) -> list[Solution]:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM solutions s WHERE s.question_id={question_id};")
         results = cursor.fetchall()
         cursor.close()
-        return [Solution(result).__dict__() for result in results]
+        return [Solution(result) for result in results]
     
     ################################################################################################
 
-    def getQuestionSolutionById(self, question_solution_id: int) -> dict | None:
+    def getQuestionSolutionById(self, question_solution_id: int) -> Solution | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM solutions s WHERE s.question_id={question_solution_id};")
         result = cursor.fetchall()
         cursor.close()
         if not result: return None
-        else: return Solution(result).__dict__()
+        else: return Solution(result)
     
     ################################################################################################
 
-    def insertQuestionSolution(self, question_id: int, text: str) -> int | None:
-        result: int | None = None
+    def insertQuestionSolution(self, solution: Solution) -> bool:
+        result: bool = False
         cursor = self.connection.cursor()
         try:
             cursor.execute(f"""
-                INSERT INTO solutions (question_id, text)
-                VALUES ({question_id}, '{text}') 
-                RETURNING id;
+                INSERT INTO solutions (id, question_id, text)
+                VALUES ({solution.id}, {solution.question_id}, '{solution.text}');
             """)
-            result = cursor.fetchone()[0]
+            result = True
             self.connection.commit()
         except: self.connection.rollback()
         cursor.close()
@@ -271,35 +265,34 @@ class Database:
     
     ################################################################################################
 
-    def getSolutionImages(self, solution_id: int) -> list[dict]:
+    def getSolutionImages(self, solution_id: int) -> list[SolutionImage]:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM solution_images i WHERE i.solution_id={solution_id};")
         results = cursor.fetchall()
         cursor.close()
-        return [SolutionImage(result).__dict__() for result in results]
+        return [SolutionImage(result) for result in results]
     
     ################################################################################################
 
-    def getSolutionImageById(self, solution_image_id: int) -> dict | None:
+    def getSolutionImageById(self, solution_image_id: int) -> SolutionImage | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM solution_images i WHERE i.id={solution_image_id};")
         result = cursor.fetchall()
         cursor.close()
         if not result: return None
-        else: return SolutionImage(result).__dict__()
+        else: return SolutionImage(result)
     
     ################################################################################################
 
-    def insertSolutinoImage(self, solution_id: int, path: str) -> int | None:
-        result: int | None = None
+    def insertSolutionImage(self, image: SolutionImage) -> bool:
+        result: bool = False 
         cursor = self.connection.cursor()
         try:
             cursor.execute(f"""
-                INSERT INTO solution_images (solution_id, path)
-                VALUES ({solution_id}, '{path}') 
-                RETURNING id;
+                INSERT INTO solution_images (id, solution_id, path)
+                VALUES ({image.id}, {image.solution_id}, '{image.path}');
             """)
-            result = cursor.fetchone()[0]
+            result = True
             self.connection.commit()
         except: self.connection.rollback()
         cursor.close()
@@ -307,52 +300,52 @@ class Database:
     
     ################################################################################################
 
-    def getUsers(self) -> list[dict]:
+    def getUsers(self) -> list[User]:
         cursor = self.connection.cursor()
         cursor.execute("SELECT * FROM users;")
         results = cursor.fetchall()
         cursor.close()
-        return [User(result).__dict__() for result in results]
+        return [User(result) for result in results]
     
     ################################################################################################
 
-    def getUserById(self, user_id: int) -> dict | None:
+    def getUserById(self, user_id: int) -> User | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM users u WHERE u.id={user_id};")
         result = cursor.fetchall()
         cursor.close()
         if not result: return None
-        else: return User(result).__dict__()
+        else: return User(result)
     
     ################################################################################################
 
-    def getUserByEmail(self, user_email: str) -> dict | None:
+    def getUserByEmail(self, user_email: str) -> User | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM users u WHERE u.email='{user_email}';")
         result = cursor.fetchall()
         cursor.close()
         if not result: return None
-        else: return User(result).__dict__()       
-    
+        else: return User(result)
+
     ################################################################################################
 
-    def getUserByUsername(self, username: str) -> dict | None:
+    def getUserByUsername(self, username: str) -> User | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM users u WHERE u.username='{username}';")
         result = cursor.fetchall()
         cursor.close()
         if not result: return None
-        else: return User(result).__dict__()       
-    
+        else: return User(result)
+
     ################################################################################################
 
-    def insertUser(self, user_email: str, username: str) -> int | None:
+    def insertUser(self, user: User) -> int | None:
         result: int | None = None
         cursor = self.connection.cursor()
         try:
             cursor.execute(f"""
                 INSERT INTO users (email, username)
-                VALUES ('{user_email}', '{username}') 
+                VALUES ('{user.email}', '{user.username}') 
                 RETURNING id;
             """)
             result = cursor.fetchone()[0]
@@ -363,31 +356,31 @@ class Database:
     
     ################################################################################################
 
-    def getUsersAnswers(self) -> list[dict]:
+    def getUsersAnswers(self) -> list[UserAnswer]:
         cursor = self.connection.cursor()
         cursor.execute("SELECT * FROM user_answers;")
         results = cursor.fetchall()
         cursor.close()
-        return [UserAnswer(result).__dict__() for result in results]
+        return [UserAnswer(result) for result in results]
     
     ################################################################################################
 
-    def getUserAnswers(self, user_id: int) -> list[dict]:
+    def getUserAnswers(self, user_id: int) -> list[UserAnswer]:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM user_answers a WHERE a.user_id={user_id};")
         results = cursor.fetchall()
         cursor.close()
-        return [UserAnswer(result).__dict__() for result in results]     
+        return [UserAnswer(result) for result in results]     
     
     ################################################################################################
 
-    def createUserAnswer(self, user_id: int, question_id: int, answer_id: int) -> int | None:
+    def createUserAnswer(self, answer: UserAnswer) -> int | None:
         result: int | None = None
         cursor = self.connection.cursor()
         try:
             cursor.execute(f"""
                 INSERT INTO user_answers (user_id, question_id, answer_id)
-                VALUES ({user_id}, {question_id}, {answer_id}) 
+                VALUES ({answer.user_id}, {answer.question_id}, {answer.answer_id})
                 RETURNING id;
             """)
             result = cursor.fetchone()[0]

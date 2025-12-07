@@ -4,5 +4,6 @@
 
 .env
 .venv
+imgs/
 
 __pycache__/

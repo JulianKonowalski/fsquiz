@@ -1,3 +1,4 @@
+from enum import Enum
 from typing import Tuple
 
 class Event:
@@ -21,12 +22,12 @@ class Quiz:
 
     id: int | None = None
     event_id: int | None = None
-    date: str | None = None
+    year: int | None = None
 
-    def __init__(self, data: Tuple[int, int, str]):
+    def __init__(self, data: Tuple[int, int, int]):
         self.id = data[0]
         self.event_id = data[1]
-        self.date = data[2]
+        self.year = data[2]
 
     def __dict__(self) -> dict:
         return {
@@ -38,6 +39,12 @@ class Quiz:
 ####################################################################################################
 
 class QuestionType:
+
+    class Type(Enum):
+        SINGLE_CHOICE = 1
+        MULTI_CHOICE = 2
+        INPUT = 3
+        INPUT_RANGE = 4
 
     id: int | None = None
     name: str | None = None
@@ -62,9 +69,15 @@ class Question:
     text: str | None = None
 
     def __init__(self, data: Tuple[int, int, int, str]):
+        match data[2]:
+            case "single-choice": type_id = QuestionType.Type.SINGLE_CHOICE.value
+            case "multi-choice": type_id = QuestionType.Type.MULTI_CHOICE.value
+            case "input": type_id = QuestionType.Type.INPUT.value
+            case "input-range": type_id = QuestionType.Type.INPUT_RANGE.value
+
         self.id = data[0]
         self.quiz_id = data[1]
-        self.type_id = data[2]
+        self.type_id = type_id
         self.text = data[3]
 
     def __dict__(self) -> dict:
@@ -110,7 +123,7 @@ class QuestionImage:
     def __init__(self, data: Tuple[int, int, str]):
         self.id = data[0]
         self.question_id = data[1]
-        self.path = data[3]
+        self.path = data[2]
 
     def __dict__(self) -> dict:
         return {
