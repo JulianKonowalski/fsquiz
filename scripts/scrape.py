@@ -47,18 +47,12 @@ def getQuizData(quiz_id: int) -> Tuple[list[Question], list[QuestionAnswer], lis
 
     for question in data:
         questions.append(Question((question["question_id"], quiz_id, question["type"], question["text"])))
-
-        for answer in question["answers"]:
-            is_correct: bool = True if answer["is_correct"] == "true" else False
-            answers.append(QuestionAnswer((answer["answer_id"], answer["question_id"], answer["answer_text"], is_correct)))
-
-        for image in question["images"]:
-            question_images.append(QuestionImage((image["img_id"], question["question_id"], image["path"])))
+        answers += [QuestionAnswer((answer["answer_id"], answer["question_id"], answer["answer_text"], answer["is_correct"])) for answer in question["answers"]]
+        question_images += [QuestionImage((image["img_id"], question["question_id"], image["path"])) for image in question["images"]]
 
         for solution in question["solution"]:
             solutions.append(Solution((solution["solution_id"], question["question_id"], solution["text"])))
-            for image in solution["images"]:
-                solution_images.append(SolutionImage((image["img_id"], solution["solution_id"], image["path"])))
+            solution_images += [SolutionImage((image["img_id"], solution["solution_id"], image["path"])) for image in solution["images"]]
 
     return (questions, answers, question_images, solutions, solution_images)
 
