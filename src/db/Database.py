@@ -28,7 +28,7 @@ class Database:
     def getEventById(self, event_id: int) -> Event | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM events e WHERE e.id={event_id};")
-        result = cursor.fetchall()
+        result = cursor.fetchone()
         cursor.close()
         if not result: return None
         else: return Event(result)
@@ -64,7 +64,7 @@ class Database:
     def getQuizById(self, quiz_id: int) -> Quiz | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM quizzes q WHERE q.id={quiz_id};")
-        result = cursor.fetchall()
+        result = cursor.fetchone()
         cursor.close()
         if not result: return None
         else: return Quiz(result)
@@ -108,7 +108,7 @@ class Database:
     def getQuestionTypeById(self, question_type_id: int) -> QuestionType | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM question_types t WHERE t.id={question_type_id};")
-        result = cursor.fetchall()
+        result = cursor.fetchone()
         cursor.close()
         if not result: return None
         else: return QuestionType(result)
@@ -127,7 +127,7 @@ class Database:
     def getQuestionById(self, question_id: int) -> Question | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM questions q WHERE q.id={question_id};")
-        result = cursor.fetchall()
+        result = cursor.fetchone()
         cursor.close()
         if not result: return None
         else: return Question(result)
@@ -171,7 +171,7 @@ class Database:
     def getQuestionAnswerById(self, question_answer_id: int) -> QuestionAnswer | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM question_answers a WHERE a.id={question_answer_id};")
-        result = cursor.fetchall()
+        result = cursor.fetchone()
         cursor.close()
         if not result: return None
         else: return QuestionAnswer(result)
@@ -207,7 +207,7 @@ class Database:
     def getQuestionImageById(self, question_image_id: int) -> QuestionImage | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM question_images i WHERE i.id={question_image_id};")
-        result = cursor.fetchall()
+        result = cursor.fetchone()
         cursor.close()
         if not result: return None
         else: return QuestionImage(result)
@@ -242,7 +242,7 @@ class Database:
     def getQuestionSolutionById(self, question_solution_id: int) -> Solution | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM solutions s WHERE s.question_id={question_solution_id};")
-        result = cursor.fetchall()
+        result = cursor.fetchone()
         cursor.close()
         if not result: return None
         else: return Solution(result)
@@ -277,7 +277,7 @@ class Database:
     def getSolutionImageById(self, solution_image_id: int) -> SolutionImage | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM solution_images i WHERE i.id={solution_image_id};")
-        result = cursor.fetchall()
+        result = cursor.fetchone()
         cursor.close()
         if not result: return None
         else: return SolutionImage(result)
@@ -312,7 +312,7 @@ class Database:
     def getUserById(self, user_id: int) -> User | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM users u WHERE u.id={user_id};")
-        result = cursor.fetchall()
+        result = cursor.fetchone()
         cursor.close()
         if not result: return None
         else: return User(result)
@@ -322,7 +322,7 @@ class Database:
     def getUserByEmail(self, user_email: str) -> User | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM users u WHERE u.email='{user_email}';")
-        result = cursor.fetchall()
+        result = cursor.fetchone()
         cursor.close()
         if not result: return None
         else: return User(result)
@@ -332,7 +332,7 @@ class Database:
     def getUserByUsername(self, username: str) -> User | None:
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM users u WHERE u.username='{username}';")
-        result = cursor.fetchall()
+        result = cursor.fetchone()
         cursor.close()
         if not result: return None
         else: return User(result)

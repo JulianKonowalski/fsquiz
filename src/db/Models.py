@@ -33,18 +33,12 @@ class Quiz:
         return {
             "id": self.id,
             "event_id": self.event_id,
-            "date": self.date
+            "year": self.year
         }
     
 ####################################################################################################
 
 class QuestionType:
-
-    class Type(Enum):
-        SINGLE_CHOICE = 1
-        MULTI_CHOICE = 2
-        INPUT = 3
-        INPUT_RANGE = 4
 
     id: int | None = None
     name: str | None = None
@@ -69,15 +63,9 @@ class Question:
     text: str | None = None
 
     def __init__(self, data: Tuple[int, int, int, str]):
-        match data[2]:
-            case "single-choice": type_id = QuestionType.Type.SINGLE_CHOICE.value
-            case "multi-choice": type_id = QuestionType.Type.MULTI_CHOICE.value
-            case "input": type_id = QuestionType.Type.INPUT.value
-            case "input-range": type_id = QuestionType.Type.INPUT_RANGE.value
-
         self.id = data[0]
         self.quiz_id = data[1]
-        self.type_id = type_id
+        self.type_id = data[2]
         self.text = data[3]
 
     def __dict__(self) -> dict:
