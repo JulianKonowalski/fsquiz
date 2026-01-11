@@ -1,204 +1,64 @@
-from enum import Enum
-from typing import Tuple
+from sqlalchemy import Column, ForeignKey 
+from sqlalchemy import Text, String, Integer, Boolean
+from sqlalchemy.orm import relationship, declarative_base
 
-class Event:
+Base = declarative_base()
 
-    id: int | None = None
-    name: str | None = None
+# ------------------------------------------------------------------------------------------------ #
 
-    def __init__(self, data: Tuple[int, str]):
-        self.id = data[0]
-        self.name = data[1]
+class QuestionType(Base):
 
-    def __dict__(self) -> dict:
-        return {
-            "id": self.id,
-            "name": self.name
-        }
+    id: Column      = Column(String(16), primary_key=True, nullable=False)
 
-####################################################################################################
+    __tablename__ = "question_types"
 
-class Quiz:
+# ------------------------------------------------------------------------------------------------ #
 
-    id: int | None = None
-    event_id: int | None = None
-    year: int | None = None
+class Question(Base):
 
-    def __init__(self, data: Tuple[int, int, int]):
-        self.id = data[0]
-        self.event_id = data[1]
-        self.year = data[2]
+    id: Column          = Column(Integer, primary_key=True)
+    text: Column        = Column(Text, unique=False, nullable=False)
+    category: Column    = Column(String(8), unique=False, nullable=False)
+    difficulty: Column  = Column(String(8), unique=False, nullable=False)
+    type_id: Column     = Column(String(16), ForeignKey("question_types.id", ondelete="RESTRICT"), nullable=False)
 
-    def __dict__(self) -> dict:
-        return {
-            "id": self.id,
-            "event_id": self.event_id,
-            "year": self.year
-        }
-    
-####################################################################################################
+    __tablename__   = "questions"
+    type            = relationship("QuestionType")
+    answers         = relationship("QuestionAnswer", cascade="all, delete", back_populates="question")
 
-class QuestionType:
+# ------------------------------------------------------------------------------------------------ #
 
-    id: int | None = None
-    name: str | None = None
+class QuestionAnswer(Base):
 
-    def __init__(self, data: Tuple[int, str]):
-        self.id = data[0]
-        self.name = data[1]
+    id: Column          = Column(Integer, primary_key=True)
+    text: Column        = Column(Text, unique=False, nullable=False)
+    is_correct: Column  = Column(Boolean, nullable=False)
+    question_id: Column = Column(Integer, ForeignKey("questions.id", ondelete="CASCADE"), nullable=False)
 
-    def __dict__(self) -> dict:
-        return {
-            "id": self.id,
-            "name": self.name
-        }
-    
-####################################################################################################
+    __tablename__   = "question_answers"
+    question        = relationship("Question", back_populates="answers")
 
-class Question:
+# ------------------------------------------------------------------------------------------------ #
 
-    id: int | None = None
-    quiz_id: int | None = None
-    type_id: int | None = None
-    text: str | None = None
+class User(Base):
 
-    def __init__(self, data: Tuple[int, int, int, str]):
-        self.id = data[0]
-        self.quiz_id = data[1]
-        self.type_id = data[2]
-        self.text = data[3]
+    id: Column          = Column(String(16), primary_key=True, nullable=False)
+    email: Column       = Column(String(256), unique=False, nullable=False)
+    password: Column    = Column(String(32), unique=False, nullable=False)
 
-    def __dict__(self) -> dict:
-        return {
-            "id": self.id,
-            "quiz_id": self.quiz_id,
-            "type_id": self.type_id,
-            "text": self.text
-        }
+    __tablename__   = "users"
+    answers         = relationship("UserAnswer", cascade="all, delete", back_populates="user")
 
-####################################################################################################
+# ------------------------------------------------------------------------------------------------ #
 
-class QuestionAnswer:
+class UserAnswer(Base):
 
-    id: int | None
-    question_id: int | None
-    text: str | None = None
-    is_correct: bool | None = None
+    id: Column          = Column(Integer, primary_key=True)
+    user_id: Column     = Column(String(16), ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    question_id: Column = Column(Integer, ForeignKey("questions.id", ondelete="CASCADE"), nullable=False)
+    answer_id: Column   = Column(Integer, ForeignKey("question_answers.id", ondelete="CASCADE"), nullable=False)
 
-    def __init__(self, data: Tuple[int, int, str, bool]):
-        self.id = data[0]
-        self.question_id = data[1]
-        self.text = data[2]
-        self.is_correct = data[3]
+    __tablename__   = "user_answers"
+    user            = relationship("User", back_populates="answers")
 
-    def __dict__(self) -> dict:
-        return {
-            "id": self.id,
-            "question_id": self.question_id,
-            "text": self.text,
-            "is_correct": self.is_correct
-        }
-
-
-####################################################################################################
-
-class QuestionImage:
-
-    id: int | None = None
-    question_id: int | None
-    path: str | None = None
-
-    def __init__(self, data: Tuple[int, int, str]):
-        self.id = data[0]
-        self.question_id = data[1]
-        self.path = data[2]
-
-    def __dict__(self) -> dict:
-        return {
-            "id": self.id,
-            "question_id": self.question_id,
-            "path": self.path
-        }
-
-####################################################################################################
-
-class Solution:
-
-    id: int | None = None
-    question_id: int | None
-    text: str | None = None
-
-    def __init__(self, data: Tuple[int, int, str]):
-        self.id = data[0]
-        self.question_id = data[1]
-        self.text = data[2]
-
-    def __dict__(self) -> dict:
-        return {
-            "id": self.id,
-            "question_id": self.question_id,
-            "text": self.text
-        }
-
-####################################################################################################
-
-class SolutionImage:
-
-    id: int | None = None
-    solution_id: int | None = None
-    path: str | None = None
-
-    def __init__(self, data: Tuple[int, int, str]):
-        self.id = data[0]
-        self.solution_id = data[1]
-        self.path = data[2]
-
-    def __dict__(self) -> dict:
-        return {
-            "id": self.id,
-            "solution_id": self.solution_id,
-            "path": self.path
-        }
-
-####################################################################################################
-
-class User:
-
-    id: int | None = None
-    email: str | None = None
-    username: str | None = None
-
-    def __init__(self, data: Tuple[int, str, str]):
-        self.id = data[0]
-        self.email = data[1]
-        self.username = data[2]
-
-    def __dict__(self) -> dict:
-        return {
-            "id": self.id,
-            "email": self.email,
-            "username": self.username
-        }
-
-####################################################################################################
-
-class UserAnswer:
-
-    id: int | None = None
-    user_id: int | None = None
-    question_id: int | None = None
-    answer_id: int | None = None
-
-    def __init__(self, data: Tuple[int, int, int, int]):
-        self.id = data[0]
-        self.user_id = data[1]
-        self.question_id = data[2]
-        self.answer_id = data[3]
-
-    def __dict__(self) -> dict:
-        return {
-            "id": self.id,
-            "user_id": self.user_id,
-            "question_id": self.question_id,
-            "answer_id": self.answer_id
-        }
+# ------------------------------------------------------------------------------------------------ #

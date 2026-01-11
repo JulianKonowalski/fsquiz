@@ -1,0 +1,2951 @@
+{
+    "questions": [
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "If a conflict exists between different official documents, which order of authority is correct? (Select 2 answers)",
+            "answers": [
+                "Event Regulations override FS Rules",
+                "FS Rules override Event Regulations",
+                "Official Bulletins override both",
+                "Team's written clarification overrides FS Rules",
+                "Verbal instructions override written rules"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which statements about responsibility are correct? (Select 2 answers)",
+            "answers": [
+                "Inspectors are responsible for missed rule violations",
+                "Teams remain responsible even if a car passes inspection",
+                "Event organizers assume liability for unsafe cars",
+                "Passing inspection guarantees compliance",
+                "Teams are responsible for compliance at all times"
+            ],
+            "correctAnswers": [
+                2,
+                5
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which conditions must be met for a protest to be valid? (Select 3 answers)",
+            "answers": [
+                "Submitted by Team Captain or designated representative",
+                "Submitted verbally to any judge",
+                "Submitted within the specified time limit",
+                "Submitted with required protest fee (if applicable)",
+                "Must concern only dynamic events",
+                "Must be accepted automatically"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which actions may lead to penalties under Section A? (Select 3 answers)",
+            "answers": [
+                "Unsportsmanlike conduct",
+                "Missing document submission deadlines",
+                "Failing a technical rule",
+                "Ignoring official instructions",
+                "Poor endurance performance",
+                "Unsafe behavior in the paddock"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                6
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which statements about driver eligibility are correct? (Select 2 answers)",
+            "answers": [
+                "Driver eligibility is defined only by FS Rules",
+                "Event Regulations may impose additional requirements",
+                "A licensed road driver is automatically eligible",
+                "Drivers must attend required briefings",
+                "Drivers may be substituted at any time without notice"
+            ],
+            "correctAnswers": [
+                2,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which are considered official communications? (Select 2 answers)",
+            "answers": [
+                "Official event notice board / system",
+                "Verbal instructions from a marshal",
+                "Emails sent by organizers via official channels",
+                "Messages sent via team WhatsApp groups",
+                "Announcements on social media"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Who is allowed to officially represent the team to the organizers? (Select 2 answers)",
+            "answers": [
+                "Any registered team member",
+                "Team Captain",
+                "Designated team representative",
+                "Faculty advisor",
+                "Any registered driver"
+            ],
+            "correctAnswers": [
+                2,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which statements about driver briefings are true? (Select 3 answers)",
+            "answers": [
+                "Attendance may be mandatory for all drivers",
+                "Missing a briefing may prohibit a driver from competing",
+                "Briefings apply only to endurance",
+                "Briefing content may override previously published information",
+                "Briefings may include event-specific safety rules",
+                "Briefings are optional if rules are read"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                5
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Who has final authority to interpret the rules during the event? (Select 2 answers)",
+            "answers": [
+                "Team Captain",
+                "Event Officials / Stewards",
+                "Chief Technical Inspector",
+                "Design Judges",
+                "FS Rules Committee (remote)"
+            ],
+            "correctAnswers": [
+                2,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which statements are correct regarding schedules and time slots? (Select 2 answers)",
+            "answers": [
+                "Teams are guaranteed all scheduled runs",
+                "Missing a time slot may result in loss of that attempt",
+                "Schedule changes require team approval",
+                "Organizers may change schedules at any time",
+                "Teams may protest schedule changes"
+            ],
+            "correctAnswers": [
+                2,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which behaviors are explicitly regulated under Section A? (Select 3 answers)",
+            "answers": [
+                "Unsafe actions in the paddock",
+                "Unsportsmanlike conduct toward other teams",
+                "Technical rule violations",
+                "Behavior toward officials",
+                "Poor design justification",
+                "Driving line choice"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which statements about having multiple drivers are correct? (Select 2 answers)",
+            "answers": [
+                "All drivers must meet eligibility requirements",
+                "All drivers must drive at least one event",
+                "Drivers may be restricted from events individually",
+                "Changing drivers requires technical reinspection",
+                "Only one driver may be registered"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which sanctions may be imposed under Section A? (Select 3 answers)",
+            "answers": [
+                "Warnings",
+                "Point penalties",
+                "Disqualification from an event",
+                "Mandatory design changes",
+                "Ban from future competitions",
+                "Automatic endurance failure"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which statements about rule knowledge are correct? (Select 2 answers)",
+            "answers": [
+                "Teams may claim ignorance of unclear rules",
+                "Teams are expected to know all applicable rules",
+                "Judges must explain rules upon request",
+                "Rule misinterpretation does not excuse violations",
+                "Only captains must know the rules"
+            ],
+            "correctAnswers": [
+                2,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which statements about Event Regulations are correct? (Select 2 answers)",
+            "answers": [
+                "They may add restrictions beyond FS Rules",
+                "They may relax FS safety rules",
+                "They apply only to static events",
+                "They are binding for that event",
+                "Teams may ignore them if contradictory"
+            ],
+            "correctAnswers": [
+                1,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which statements regarding safety authority are correct? (Select 2 answers)",
+            "answers": [
+                "Officials may stop a team for safety reasons",
+                "Safety concerns must be written to be enforced",
+                "Unsafe behavior can be penalized immediately",
+                "Only technical inspectors handle safety",
+                "Safety penalties require a protest"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which statements are correct? (Select 2 answers)",
+            "answers": [
+                "English is the official language",
+                "Teams may demand translations",
+                "Official documents are binding in English",
+                "Verbal translations override written text",
+                "Teams may submit protests in any language"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which statements about decisions are correct? (Select 2 answers)",
+            "answers": [
+                "All decisions are automatically appealable",
+                "Some decisions are final and not appealable",
+                "Appeals suspend penalties automatically",
+                "Officials may reconsider decisions",
+                "Judges must provide written justification"
+            ],
+            "correctAnswers": [
+                2,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which statements are correct? (Select 2 answers)",
+            "answers": [
+                "Credentials must be worn when required",
+                "Credentials are transferable between team members",
+                "Lack of credentials may restrict access",
+                "Only drivers require credentials",
+                "Credentials replace registration"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "A",
+            "difficulty": "hard",
+            "text": "Which statements best reflect the philosophy of Section A? (Select 2 answers)",
+            "answers": [
+                "Performance has priority over safety",
+                "Safety and fairness have priority",
+                "Teams self-regulate without oversight",
+                "Organizers retain authority during the event",
+                "Rules apply only during dynamic events"
+            ],
+            "correctAnswers": [
+                2,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "easy",
+            "text": "What is the length of the Acceleration track?",
+            "answers": [
+                "50 m",
+                "60 m",
+                "75 m",
+                "100 m"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "easy",
+            "text": "The Skid Pad event consists of:",
+            "answers": [
+                "One left-hand and one right-hand circle",
+                "Two left-hand circles only",
+                "One timed lap",
+                "One figure-eight"
+            ],
+            "correctAnswers": 1,
+            "type": "single-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "easy",
+            "text": "Driver changes are permitted during:",
+            "answers": [
+                "Acceleration",
+                "Skid Pad",
+                "Autocross",
+                "Endurance"
+            ],
+            "correctAnswers": 4,
+            "type": "single-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "easy",
+            "text": "The Autocross event primarily evaluates:",
+            "answers": [
+                "Fuel efficiency",
+                "Reliability",
+                "Vehicle handling and agility",
+                "Driver reaction time"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "easy",
+            "text": "The Endurance event distance is approximately:",
+            "answers": [
+                "5 km",
+                "10 km",
+                "22 km",
+                "42 km"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "easy",
+            "text": "The Efficiency score is calculated based on:",
+            "answers": [
+                "Total fuel used only",
+                "Average lap time only",
+                "A combination of endurance time and energy consumption",
+                "Skid Pad performance"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "easy",
+            "text": "Which timing method is used during dynamic events?",
+            "answers": [
+                "Manual stopwatch",
+                "RFID only",
+                "Electronic timing system",
+                "Driver-mounted GPS"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "easy",
+            "text": "Which cone color typically indicates a slalom or direction change?",
+            "answers": [
+                "Orange",
+                "Blue",
+                "Yellow",
+                "Red"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "easy",
+            "text": "Hitting a cone during a dynamic event results in:",
+            "answers": [
+                "Immediate disqualification",
+                "A time penalty",
+                "A warning only",
+                "No penalty"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "easy",
+            "text": "If a car cannot finish a dynamic run due to a mechanical failure:",
+            "answers": [
+                "The run is restarted",
+                "The time is ignored",
+                "The run is scored as DNF",
+                "The best previous lap is used"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which conditions can invalidate an Acceleration run? (Select 2)",
+            "answers": [
+                "Jump start",
+                "Wheelspin after launch",
+                "Crossing the finish line with cones displaced",
+                "Engine stalling before finish",
+                "Driver lifting off throttle"
+            ],
+            "correctAnswers": [
+                1,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which statements about Skid Pad timing are correct? (Select 2)",
+            "answers": [
+                "Only the fastest lap is counted",
+                "Left and right circles are both timed",
+                "The first lap is used for scoring",
+                "Penalties apply per cone hit",
+                "Driver changes are allowed"
+            ],
+            "correctAnswers": [
+                2,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which actions incur penalties during Skid Pad? (Select 2)",
+            "answers": [
+                "Cone displacement",
+                "Crossing the center line",
+                "Excessive wheelspin",
+                "Driver steering corrections",
+                "Engine bogging"
+            ],
+            "correctAnswers": [
+                1,
+                2
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which statements about Autocross attempts are correct? (Select 2)",
+            "answers": [
+                "Multiple attempts may be allowed",
+                "Only one driver may compete",
+                "The fastest valid time counts",
+                "A DNF scores zero points",
+                "Cone penalties are ignored"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which situations result in Autocross penalties? (Select 3)",
+            "answers": [
+                "Cone hit",
+                "Off-course excursion",
+                "Missing a gate",
+                "Spinning without hitting cones",
+                "Exceeding track limits",
+                "Slow lap time"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which statements regarding drivers in Endurance are correct? (Select 2)",
+            "answers": [
+                "At least one driver change is mandatory",
+                "Maximum of two drivers may compete",
+                "Drivers must be registered and briefed",
+                "Driver change time is excluded from total time",
+                "Driver change may be skipped"
+            ],
+            "correctAnswers": [
+                2,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which conditions can cause Endurance disqualification? (Select 3)",
+            "answers": [
+                "Unsafe driving",
+                "Mechanical failure",
+                "Missing mandatory driver change",
+                "Ignoring black flag",
+                "Fuel consumption too high",
+                "Car stopping on track"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which statements define a valid Endurance finish? (Select 2)",
+            "answers": [
+                "Completing all laps",
+                "Crossing the finish line under power",
+                "Completing the minimum distance",
+                "Finishing within a time limit",
+                "No cone penalties"
+            ],
+            "correctAnswers": [
+                3,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which conditions must be met to score Efficiency points? (Select 2)",
+            "answers": [
+                "Completion of Endurance",
+                "Completion of Autocross",
+                "Passing Technical Inspection",
+                "Zero penalties",
+                "Use of dry tires only"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which actions affect Efficiency scoring? (Select 2)",
+            "answers": [
+                "Cone hits during Endurance",
+                "Higher fuel or energy consumption",
+                "Longer Endurance time",
+                "Skid Pad performance",
+                "Acceleration results"
+            ],
+            "correctAnswers": [
+                2,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which flags require immediate driver response? (Select 2)",
+            "answers": [
+                "Yellow",
+                "Red",
+                "Blue",
+                "Black",
+                "Green"
+            ],
+            "correctAnswers": [
+                2,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "A black flag may be shown due to: (Select 3)",
+            "answers": [
+                "Unsafe driving",
+                "Mechanical issues",
+                "Ignoring marshal instructions",
+                "Slow lap time",
+                "Excessive fuel consumption",
+                "Missing a cone"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which situations allow a run restart? (Select 2)",
+            "answers": [
+                "Timing system failure",
+                "Driver mistake",
+                "Cone displacement by another car",
+                "Mechanical failure of the car",
+                "Weather change"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which statements about course walking are correct? (Select 2)",
+            "answers": [
+                "It is mandatory for drivers",
+                "It is allowed only at specific times",
+                "Cones may be moved during walking",
+                "Course walking may be restricted by organizers",
+                "Course walking replaces briefing"
+            ],
+            "correctAnswers": [
+                2,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which statements about track limits are correct? (Select 2)",
+            "answers": [
+                "Leaving the track may incur penalties",
+                "Track limits are defined by cones",
+                "Touching cones is allowed",
+                "Repeated violations may cause DNF",
+                "Track limits do not apply in Endurance"
+            ],
+            "correctAnswers": [
+                1,
+                2
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which statements about weather effects are correct? (Select 2)",
+            "answers": [
+                "Events may be delayed or stopped",
+                "Times are corrected for weather",
+                "Organizers may modify procedures",
+                "Wet runs are discarded",
+                "Drivers may refuse to drive"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which statements about vehicle recovery are correct? (Select 2)",
+            "answers": [
+                "Drivers may exit the car without permission",
+                "Marshals manage recovery",
+                "Teams may recover cars during events",
+                "Recovery may end the run",
+                "Recovery time is excluded"
+            ],
+            "correctAnswers": [
+                2,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which penalties are time-based? (Select 2)",
+            "answers": [
+                "Cone hits",
+                "Missing gates",
+                "Unsafe driving",
+                "Black flag",
+                "Driver briefing absence"
+            ],
+            "correctAnswers": [
+                1,
+                2
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "Which statements about event order are correct? (Select 2)",
+            "answers": [
+                "Events must be run in a fixed order",
+                "Organizers define event order",
+                "Skid Pad must be completed before Autocross",
+                "Endurance is usually the final dynamic event",
+                "Acceleration must be first"
+            ],
+            "correctAnswers": [
+                2,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "D",
+            "difficulty": "hard",
+            "text": "General dynamic rules philosophy: (Select 2)",
+            "answers": [
+                "Performance is rewarded within safety limits",
+                "Safety overrides performance",
+                "All penalties eliminate scoring",
+                "Dynamic events prioritize speed only",
+                "Rules apply only during Endurance"
+            ],
+            "correctAnswers": [
+                1,
+                2
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "easy",
+            "text": "The maximum tractive system voltage allowed in Formula Student EV is:",
+            "answers": [
+                "300 V",
+                "450 V",
+                "600 V",
+                "800 V"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "easy",
+            "text": "The accumulator is classified as part of the:",
+            "answers": [
+                "Primary structure",
+                "Tractive system",
+                "Low-voltage system",
+                "Shutdown circuit"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "easy",
+            "text": "Orange cables are used to indicate:",
+            "answers": [
+                "Low-voltage wiring",
+                "Cooling lines",
+                "Tractive system wiring",
+                "Data communication"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "easy",
+            "text": "Which device is used to electrically isolate the tractive system?",
+            "answers": [
+                "Inverter",
+                "Shutdown circuit",
+                "Accumulator container",
+                "Motor controller"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "easy",
+            "text": "The READY-TO-DRIVE sound indicates:",
+            "answers": [
+                "Accumulator charging",
+                "LV system powered",
+                "Vehicle is able to move under its own power",
+                "Shutdown circuit open"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "easy",
+            "text": "Who is allowed to work on energized HV systems?",
+            "answers": [
+                "Any team member",
+                "Drivers only",
+                "Trained and authorized team members - ESO",
+                "Judges"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "easy",
+            "text": "The Insulation Monitoring Device (IMD) is used to:",
+            "answers": [
+                "Measure cell temperatures",
+                "Detect insulation faults",
+                "Control inverter switching",
+                "Balance battery cells"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "easy",
+            "text": "Which color is used for tractive system warning labels?",
+            "answers": [
+                "Blue",
+                "Red",
+                "Yellow",
+                "Green"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "easy",
+            "text": "If the Shutdown Circuit opens:",
+            "answers": [
+                "The car may still drive",
+                "The tractive system must be de-energized",
+                "Only the LV system is affected",
+                "Nothing happens"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "easy",
+            "text": "The accumulator container must be:",
+            "answers": [
+                "Flexible",
+                "Open for ventilation",
+                "Mechanically rigid and closed",
+                "Made only from aluminum"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which components are part of the shutdown circuit?",
+            "answers": [
+                "Shutdown buttons",
+                "AIRs control circuit",
+                "IMD",
+                "Brake system",
+                "Inertia switch",
+                "Precharge resistor"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                5
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which situations require opening the shutdown circuit?",
+            "answers": [
+                "Emergency stop pressed",
+                "Insulation fault detected",
+                "Accumulator temperature warning",
+                "Loss of LV power",
+                "Driver unbuckles harness",
+                "READY-TO-DRIVE sound failure"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which requirements apply to HV connectors?",
+            "answers": [
+                "Tool-less disconnect allowed",
+                "Touch-safe when disconnected",
+                "Clearly marked as HV",
+                "Rated only for current",
+                "May expose live conductors"
+            ],
+            "correctAnswers": [
+                2,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which statements about the accumulator container are correct?",
+            "answers": [
+                "Must withstand mechanical loads",
+                "May be electrically conductive",
+                "Must be fire resistant",
+                "Must prevent electrolyte leakage",
+                "Must be transparent",
+                "Must be grounded"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which conditions cause an automatic tractive system shutdown?",
+            "answers": [
+                "IMD fault",
+                "Driver lifts throttle",
+                "Shutdown circuit opens",
+                "Regen braking",
+                "Low SOC"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which statements about precharge are correct?",
+            "answers": [
+                "Limits current to the inverter capacitors",
+                "Is optional if capacitors are small",
+                "Must complete before AIRs close fully",
+                "Is part of the shutdown circuit",
+                "Happens after READY-TO-DRIVE"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which are forbidden during EV operation?",
+            "answers": [
+                "Exposed HV conductors",
+                "Bypassing safety devices",
+                "Regen braking",
+                "Touching HV parts without PPE",
+                "Using orange cables",
+                "Insulation monitoring"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which statements about TS voltage measurement points are correct?",
+            "answers": [
+                "Must be accessible during inspection",
+                "Must be permanently live",
+                "Must be touch-safe",
+                "Must bypass AIRs",
+                "Must be inside accumulator"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which requirements apply to IMD operation?",
+            "answers": [
+                "Must detect insulation faults to chassis",
+                "May be disabled during driving",
+                "Must trigger shutdown circuit",
+                "Must display insulation value to driver",
+                "Must be resettable without tools"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which conditions can cause failure of EV Technical Inspection?",
+            "answers": [
+                "Insufficient insulation resistance",
+                "Missing shutdown buttons",
+                "Non-functional READY-TO-DRIVE sound",
+                "Low energy efficiency",
+                "Exposed accumulator cells",
+                "High inverter temperature"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                3,
+                5
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which components must be rated for TS voltage?",
+            "answers": [
+                "AIRs",
+                "Shutdown buttons",
+                "HV connectors",
+                "LV wiring",
+                "Brake light"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which statements about TS grounding are correct?",
+            "answers": [
+                "TS must be isolated from chassis",
+                "TS negative must be grounded",
+                "Isolation is monitored continuously",
+                "Grounding improves safety",
+                "Isolation is optional"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which actions are allowed during charging?",
+            "answers": [
+                "Working on LV system inside the car",
+                "Working on energized HV system",
+                "Monitoring accumulator temperatures",
+                "Driving the car",
+                "Bypassing interlocks"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which safety devices are redundant by requirement?",
+            "answers": [
+                "AIRs",
+                "Shutdown buttons",
+                "IMD",
+                "Inverter",
+                "Brake pedal sensor"
+            ],
+            "correctAnswers": [
+                1,
+                2
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which situations require warning labels?",
+            "answers": [
+                "Accumulator container",
+                "HV cables",
+                "Inverter",
+                "LV battery",
+                "Radiator",
+                "Motor"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which statements about TS de-energization time are correct?",
+            "answers": [
+                "Must be below specified time after shutdown",
+                "Is irrelevant if AIRs open",
+                "Applies to inverter capacitors",
+                "Only applies during inspection",
+                "Must be verified"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                5
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which requirements apply to emergency shutdown buttons?",
+            "answers": [
+                "Accessible to driver",
+                "Accessible to marshals",
+                "Clearly labeled",
+                "Hidden from accidental activation",
+                "May be software-based",
+                "Part of shutdown circuit"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which are valid EV inspection tests?",
+            "answers": [
+                "Insulation resistance test",
+                "Brake test",
+                "READY-TO-DRIVE sound test",
+                "Endurance simulation",
+                "Thermal runaway test"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which conditions prevent an EV from entering dynamic events?",
+            "answers": [
+                "Failed EV inspection",
+                "Open shutdown circuit",
+                "Missing R2D sound",
+                "Low SOC",
+                "Failed skid pad",
+                "Missing HV labels"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                6
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "hard",
+            "text": "Which statements best reflect EV rules philosophy?",
+            "answers": [
+                "Safety overrides performance",
+                "Higher voltage is always better",
+                "Redundancy is required for safety",
+                "Software can replace hardware safety",
+                "Inspection approval transfers responsibility"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "medium",
+            "text": "Which condition requires the tractive system to be disabled immediately?",
+            "answers": [
+                "Low tire pressure",
+                "Shutdown circuit interruption",
+                "High inverter temperature warning",
+                "Loss of telemetry"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "medium",
+            "text": "The Accumulator Isolation Relays (AIRs):",
+            "answers": [
+                "Are optional safety devices",
+                "Must disconnect the accumulator from the tractive system",
+                "Are part of the LV system",
+                "Must be mechanical switches"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "medium",
+            "text": "Which system ensures that the car cannot drive unintentionally?",
+            "answers": [
+                "IMD",
+                "Precharge circuit",
+                "Shutdown circuit",
+                "READY-TO-DRIVE sound"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "medium",
+            "text": "The tractive system must be insulated from the chassis to at least:",
+            "answers": [
+                "100 \u03a9/V",
+                "250 \u03a9/V",
+                "500 \u03a9/V",
+                "1000 \u03a9/V"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "medium",
+            "text": "Which component is responsible for limiting inrush current?",
+            "answers": [
+                "AIRs",
+                "Motor",
+                "Precharge circuit",
+                "Shutdown button"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "medium",
+            "text": "During EV Technical Inspection, insulation resistance is measured:",
+            "answers": [
+                "Only during scrutineering",
+                "Before every dynamic event",
+                "At least once during inspection",
+                "Only if requested by judges"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "medium",
+            "text": "Which situation would cause an EV to fail Technical Inspection?",
+            "answers": [
+                "Heavy accumulator",
+                "Missing HV warning labels",
+                "Low aerodynamic efficiency",
+                "Too high motor power"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "medium",
+            "text": "The accumulator container must prevent:",
+            "answers": [
+                "Cell movement",
+                "Electrical losses",
+                "Voltage drop",
+                "Cooling airflow"
+            ],
+            "correctAnswers": 1,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "medium",
+            "text": "Which statement about the LV system is correct?",
+            "answers": [
+                "It may exceed 60 V",
+                "It is isolated from the shutdown circuit",
+                "It controls the tractive system safety devices",
+                "It must be powered by the accumulator"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "EV",
+            "difficulty": "medium",
+            "text": "What must happen before the READY-TO-DRIVE sound is played?",
+            "answers": [
+                "The inverter is powered",
+                "The tractive system is energized",
+                "The shutdown circuit is closed",
+                "The motor spins"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "easy",
+            "text": "What is the primary purpose of Technical Inspection?",
+            "answers": [
+                "Rank cars by quality",
+                "Verify compliance with rules and safety requirements",
+                "Evaluate performance",
+                "Check design creativity"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "easy",
+            "text": "When must a car pass Technical Inspection to compete in dynamic events?",
+            "answers": [
+                "Before arrival at the event",
+                "After Acceleration",
+                "Before entering any dynamic event",
+                "Only before Endurance"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "easy",
+            "text": "Who is responsible for ensuring the car complies with the rules?",
+            "answers": [
+                "Technical Inspectors",
+                "Event organizers",
+                "The team",
+                "The judges"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "easy",
+            "text": "If a car fails Technical Inspection:",
+            "answers": [
+                "It is permanently disqualified",
+                "It may not compete until issues are corrected",
+                "It may still compete in static events only",
+                "It automatically loses points"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "easy",
+            "text": "Which of the following is typically checked during Technical Inspection?",
+            "answers": [
+                "Lap times",
+                "Driver fitness",
+                "Steering system integrity",
+                "Business plan quality"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "easy",
+            "text": "Which sticker or marking is commonly applied after passing inspection?",
+            "answers": [
+                "Event sponsor logo",
+                "Technical Inspection approval sticker",
+                "Driver number",
+                "Timing transponder"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "easy",
+            "text": "During inspection, inspectors may ask teams to:",
+            "answers": [
+                "Modify event rules",
+                "Explain design choices",
+                "Demonstrate steering and brake function",
+                "Run dynamic simulations"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "easy",
+            "text": "What happens if inspectors find a safety-related non-compliance?",
+            "answers": [
+                "The issue may be ignored",
+                "The team is warned only",
+                "The car must be fixed before proceeding",
+                "Only documentation is updated"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "easy",
+            "text": "Technical Inspection typically includes checks for:",
+            "answers": [
+                "Cost accuracy",
+                "Safety and rule compliance",
+                "Marketing strategy",
+                "Endurance strategy"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "easy",
+            "text": "Who has final authority to approve a car at Technical Inspection?",
+            "answers": [
+                "Team Captain",
+                "Design Judges",
+                "Chief Technical Inspector",
+                "Dynamic Event Marshals"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "hard",
+            "text": "Which situations can require re-inspection? (Select 3)",
+            "answers": [
+                "Changing suspension pickup points",
+                "Adjusting tire pressures",
+                "Replacing a damaged steering component",
+                "Repainting bodywork",
+                "Modifying brake system components",
+                "Changing driver seating position"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                5
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "hard",
+            "text": "Which statements about inspector authority are correct? (Select 2)",
+            "answers": [
+                "Inspectors may require parts to be removed for inspection",
+                "Inspectors may waive safety rules",
+                "Inspectors may prevent the car from running",
+                "Inspectors must accept team calculations",
+                "Inspectors cannot question design intent"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "hard",
+            "text": "During inspection, which findings are automatic failures? (Select 3)",
+            "answers": [
+                "Steering free play beyond allowed limits",
+                "Cracked welds in primary structure",
+                "Cosmetic paint defects",
+                "Missing safety devices",
+                "Excessive aerodynamic drag",
+                "Loose wheel fasteners"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "hard",
+            "text": "Which systems are typically tested functionally, not just visually? (Select 2)",
+            "answers": [
+                "Steering",
+                "Cooling",
+                "Braking",
+                "Aerodynamics",
+                "Suspension damping"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "hard",
+            "text": "Which statements regarding post-inspection changes are correct? (Select 2)",
+            "answers": [
+                "Teams may freely modify the car after inspection",
+                "Safety-related changes must be reported",
+                "Inspectors may revoke approval",
+                "Only static events are affected",
+                "Changes never require re-inspection"
+            ],
+            "correctAnswers": [
+                2,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "hard",
+            "text": "Which documentation may be requested during inspection? (Select 2)",
+            "answers": [
+                "Structural equivalency documentation",
+                "Business Plan slides",
+                "Material certificates",
+                "Driver CVs",
+                "Marketing analysis"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "hard",
+            "text": "Which issues could cause a car to fail Brake Test even after passing Technical Inspection? (Select 2)",
+            "answers": [
+                "Brake pedal travel inconsistent",
+                "Engine overheating",
+                "Inadequate brake performance",
+                "Tire compound mismatch",
+                "Aerodynamic instability"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "hard",
+            "text": "Which statements about inspection stickers/marks are correct? (Select 2)",
+            "answers": [
+                "They indicate compliance at time of inspection",
+                "They guarantee compliance for the entire event",
+                "They may be removed if non-compliance is found",
+                "They replace further checks",
+                "They allow rule deviations"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "hard",
+            "text": "Which actions by a team during inspection may result in penalties? (Select 2)",
+            "answers": [
+                "Unsafe behavior",
+                "Asking technical questions",
+                "Ignoring inspector instructions",
+                "Providing incorrect information",
+                "Requesting clarification"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "hard",
+            "text": "Which statements best describe Technical Inspection philosophy? (Select 2)",
+            "answers": [
+                "Safety is the highest priority",
+                "Passing inspection transfers responsibility to inspectors",
+                "Teams are responsible at all times",
+                "Inspection ensures optimal performance",
+                "Rules are applied flexibly"
+            ],
+            "correctAnswers": [
+                1,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "medium",
+            "text": "Which condition may cause a car to be sent back for re-inspection?",
+            "answers": [
+                "Minor cosmetic damage",
+                "Missing safety wire on a critical fastener",
+                "Non-optimal suspension geometry",
+                "Slow lap time"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "medium",
+            "text": "When changes are made after passing inspection:",
+            "answers": [
+                "No action is required",
+                "The car must be re-inspected if changes affect compliance",
+                "Only documentation is updated",
+                "Only judges must be informed"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "medium",
+            "text": "Which system is typically checked for free play during inspection?",
+            "answers": [
+                "Cooling system",
+                "Steering system",
+                "Electrical system",
+                "Exhaust system"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "medium",
+            "text": "Which statement about Technical Inspection order is correct?",
+            "answers": [
+                "Inspection order is fixed across all events",
+                "Teams may choose inspection order",
+                "Organizers define inspection order",
+                "Design judges decide inspection order"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "medium",
+            "text": "If a car passes inspection but later becomes non-compliant:",
+            "answers": [
+                "It remains approved",
+                "It may be barred from further runs",
+                "Only time penalties apply",
+                "Only endurance is affected"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "medium",
+            "text": "What is commonly required before entering Brake Test?",
+            "answers": [
+                "Passing Design Event",
+                "Passing all Technical Inspection stages",
+                "Completing Acceleration",
+                "Passing Endurance"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "medium",
+            "text": "Which item is often checked visually during inspection?",
+            "answers": [
+                "Fuel consumption",
+                "Suspension pickup point visibility",
+                "Lap consistency",
+                "Driver lap times"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "medium",
+            "text": "Inspectors may reject a component if it:",
+            "answers": [
+                "Is heavier than expected",
+                "Shows damage or poor workmanship",
+                "Uses a novel design",
+                "Is difficult to manufacture"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "medium",
+            "text": "If an inspector is unsure about compliance, they may:",
+            "answers": [
+                "Automatically fail the car",
+                "Ask for documentation or clarification",
+                "Ignore the issue",
+                "Ask another team"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "IN",
+            "difficulty": "medium",
+            "text": "Which statement best describes Technical Inspection philosophy?",
+            "answers": [
+                "Catch teams out",
+                "Help teams maximize performance",
+                "Ensure safety and rule compliance",
+                "Rank engineering quality"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "Engineering Design Event primarily evaluates:",
+            "answers": [
+                "Lap time potential",
+                "Engineering decisions and justification",
+                "Manufacturing quality only",
+                "Rule compliance only"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "During the Engineering Design Event, judges expect teams to:",
+            "answers": [
+                "Defend every design choice as optimal",
+                "Explain trade-offs and design reasoning",
+                "Present marketing arguments",
+                "Focus only on CAD and drawings"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "Who may participate in the Engineering Design Event presentation?",
+            "answers": [
+                "Only the Team Captain",
+                "Only drivers",
+                "Team members listed in registration",
+                "Any university representative"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "Engineering Design Event scores are awarded based on:",
+            "answers": [
+                "Comparison to other teams\u2019 designs",
+                "Absolute performance of the car",
+                "How well the design meets its stated goals",
+                "Manufacturing cost only"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "The Cost Event evaluates primarily:",
+            "answers": [
+                "Final retail price",
+                "Manufacturing feasibility and cost understanding",
+                "Supplier discounts",
+                "Budget size"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "Which document is required for Cost judging?",
+            "answers": [
+                "Business Plan",
+                "Design Report",
+                "Cost Report",
+                "Technical Inspection Sheet"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "During Cost judging, teams must demonstrate:",
+            "answers": [
+                "Lowest possible cost",
+                "Realistic manufacturing processes",
+                "Maximum performance per euro",
+                "Use of professional suppliers"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "The Business Plan Presentation evaluates:",
+            "answers": [
+                "Vehicle reliability",
+                "Manufacturing quality",
+                "Commercial feasibility of the product",
+                "Driver skill"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "In the Business Plan, assumptions should be:",
+            "answers": [
+                "Hidden to protect IP",
+                "Optimistic and aggressive",
+                "Clearly stated and justified",
+                "Based only on sponsor input"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "Which situation may result in penalties during static events?",
+            "answers": [
+                "Poor lap times",
+                "Missing required static events documentation",
+                "Cone hits",
+                "Engine stall"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "Which statement about static event order is correct?",
+            "answers": [
+                "Static events must occur before dynamic events",
+                "Static event order is defined by organizers",
+                "Design must always be first",
+                "Cost must always be last"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "Engineering Design Event judges typically focus on:",
+            "answers": [
+                "Whether the car matches their personal preferences",
+                "Compliance with all technical rules",
+                "Engineering logic and understanding",
+                "Event scheduling"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "In static events, teams are expected to present the car as:",
+            "answers": [
+                "A race prototype only",
+                "A production-ready consumer vehicle",
+                "A product with a defined concept and target market",
+                "A one-off experimental vehicle"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "Exceeding the allotted time in a static events presentation may result in:",
+            "answers": [
+                "Disqualification",
+                "Loss of presentation points",
+                "Restart of the presentation",
+                "No consequence"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "If judges challenge a design choice, the team should:",
+            "answers": [
+                "Argue until judges agree",
+                "Admit uncertainty if justified",
+                "Avoid answering directly",
+                "Refer to another team\u2019s solution"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "Which behavior is expected during static events?",
+            "answers": [
+                "Casual attitude",
+                "Professional and respectful conduct",
+                "Aggressive defense of ideas",
+                "Silence unless questioned"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "Engineering Design Event documentation should:",
+            "answers": [
+                "Match exactly what is built on the car",
+                "Describe a hypothetical ideal version",
+                "Focus only on performance",
+                "Be shared with other teams"
+            ],
+            "correctAnswers": 1,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "During Cost judging, teams may be asked to:",
+            "answers": [
+                "Disassemble the entire car",
+                "Explain manufacturing steps",
+                "Prove lap time advantage",
+                "Perform endurance simulations"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "Which statement best reflects static event philosophy?",
+            "answers": [
+                "Static events reward creativity only",
+                "Static events reward clear engineering reasoning",
+                "Static events reward lowest cost",
+                "Static events reward driver skill"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "S",
+            "difficulty": "medium",
+            "text": "Which statement is correct?",
+            "answers": [
+                "Static results do not affect overall ranking",
+                "Static and dynamic events contribute to total score",
+                "Static scores are only tie-breakers",
+                "Only endurance affects final ranking"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "The vehicle must be:",
+            "answers": [
+                "Closed wheel",
+                "Open wheel",
+                "Enclosed cockpit",
+                "Three-wheeled"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "Minimum number of roll hoops required:",
+            "answers": [
+                "0",
+                "1",
+                "2",
+                "3"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "The driverless cockpit must accommodate:",
+            "answers": [
+                "Two drivers",
+                "One driver",
+                "Any number",
+                "No driver"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "Sliding skirts touching the ground are:",
+            "answers": [
+                "Allowed",
+                "Allowed dynamically only",
+                "Allowed with approval",
+                "Prohibited"
+            ],
+            "correctAnswers": 4,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "Forward-facing sharp edges must have a minimum radius of:",
+            "answers": [
+                "1 mm",
+                "2 mm",
+                "3 mm",
+                "5 mm"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "The steering system must:",
+            "answers": [
+                "Be electric",
+                "Be mechanically connected",
+                "Have variable ratio",
+                "Be rear-wheel only"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "Wheelbase minimum is:",
+            "answers": [
+                "1200 mm",
+                "1400 mm",
+                "1525 mm",
+                "1600 mm"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "Wet tires must have minimum tread depth of:",
+            "answers": [
+                "1.0 mm",
+                "1.5 mm",
+                "2.4 mm",
+                "3.0 mm"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "The steering wheel must have:",
+            "answers": [
+                "Concave perimeter",
+                "Continuous perimeter",
+                "Triangular shape",
+                "No padding"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "The Impact Attenuator is mounted:",
+            "answers": [
+                "Behind firewall",
+                "At rear bulkhead",
+                "Forward of front bulkhead",
+                "Anywhere"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "Suspension mounting points must be:",
+            "answers": [
+                "Painted",
+                "Welded",
+                "Visible",
+                "Hidden"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "The vehicle must be:",
+            "answers": [
+                "Symmetric",
+                "Rear-wheel drive only",
+                "Single seat",
+                "AWD only"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "Positive steering stops are:",
+            "answers": [
+                "Optional",
+                "Required",
+                "Electronic",
+                "On steering wheel"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "The main hoop protects:",
+            "answers": [
+                "Engine",
+                "Driver\u2019s feet",
+                "Driver\u2019s torso/head",
+                "Battery"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "Bodywork inside wheel keep-out zone is:",
+            "answers": [
+                "Allowed",
+                "Allowed for aero",
+                "Allowed for cooling",
+                "Prohibited"
+            ],
+            "correctAnswers": 4,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "Minimum jounce travel (with driver):",
+            "answers": [
+                "10 mm",
+                "15 mm",
+                "25 mm",
+                "50 mm"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "Aluminum wheel nuts must be:",
+            "answers": [
+                "Painted",
+                "Hard anodized",
+                "Polished",
+                "Hollow"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "The front bulkhead protects:",
+            "answers": [
+                "Radiator",
+                "Driver\u2019s feet",
+                "Engine",
+                "Suspension"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "Steering free play limit:",
+            "answers": [
+                "3\u00b0",
+                "5\u00b0",
+                "7\u00b0",
+                "10\u00b0"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "easy",
+            "text": "Side impact structures are located between:",
+            "answers": [
+                "Wheels",
+                "Front and main hoop",
+                "Firewall and engine",
+                "Nose and wheels"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which of the following components are considered part of the primary structure?",
+            "answers": [
+                "Main hoop",
+                "Front hoop",
+                "Side impact structures",
+                "Front bulkhead",
+                "Impact Attenuator",
+                "Firewall",
+                "Aerodynamic mounts"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which statements regarding the Impact Attenuator are correct?",
+            "answers": [
+                "It must be mounted forward of the front bulkhead",
+                "It is part of the primary structure",
+                "It must provide energy absorption in a frontal impact",
+                "It may be hollow if energy absorption is demonstrated",
+                "It may be made from composite materials",
+                "It can be replaced by a sufficiently long nose",
+                "It must be permanently attached to the chassis"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                4,
+                5,
+                7
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which statements regarding the Anti-Intrusion Plate are correct?",
+            "answers": [
+                "It is not part of the primary structure",
+                "It must be attached to the front bulkhead",
+                "Blind inserts may be used for fixation",
+                "It must be made from steel",
+                "It must prevent intrusion into the cockpit",
+                "It requires physical testing in all cases",
+                "It may be attached using adhesive only"
+            ],
+            "correctAnswers": [
+                2,
+                3,
+                5
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which statements regarding the open-wheel requirement are correct?",
+            "answers": [
+                "The check is performed with the wheels straight",
+                "The check is performed at full steering lock",
+                "No part of the vehicle may intrude into the keep-out zone",
+                "Tires must be visible in side view",
+                "Bodywork exceptions are allowed for aerodynamics",
+                "The check is performed at static ride height",
+                "Wheel deflection is considered"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                4,
+                6
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which statements regarding the steering system are correct?",
+            "answers": [
+                "A mechanical connection between steering wheel and wheels is required",
+                "Steering by wire is allowed",
+                "Positive steering stops are mandatory",
+                "Bonded joints are always forbidden",
+                "Steering free play is limited",
+                "Rear-wheel steering is completely forbidden",
+                "The steering rack must be inside the rollover envelope"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                5
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which statements about steering free play are correct?",
+            "answers": [
+                "It is measured at the steering wheel",
+                "It is measured dynamically",
+                "A maximum limit is defined in the rules",
+                "It is measured with the wheels straight",
+                "It may be ignored if the car drives straight",
+                "Excessive free play is an inspection failure",
+                "It may be compensated electronically"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                4,
+                6
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which statements regarding roll hoops are false?",
+            "answers": [
+                "Both a main hoop and a front hoop are required",
+                "The main hoop must protect the driver\u2019s head",
+                "Composite roll hoops are allowed without SES",
+                "Roll hoops must meet defined material requirements",
+                "Bracing must connect at nodes",
+                "Curved braces are always allowed",
+                "The front hoop is part of the primary structure"
+            ],
+            "correctAnswers": [
+                3,
+                6
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which elements define the rollover protection envelope?",
+            "answers": [
+                "Main hoop",
+                "Front hoop",
+                "Defined planes between hoops",
+                "Bodywork",
+                "Floor",
+                "Aerodynamic devices"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                3
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which statements regarding suspension mounting points are correct?",
+            "answers": [
+                "They must be visible at Technical Inspection",
+                "They may be hidden permanently",
+                "Covers must be removable",
+                "Adhesive-only joints are forbidden",
+                "Motion ratio must be 1",
+                "Pickups must be welded",
+                "Poor accessibility may cause inspection failure"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                7
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which statements regarding tires are correct?",
+            "answers": [
+                "Tires on the same axle must have the same compound",
+                "Team-cut grooves are allowed with documentation",
+                "Wet tires have a minimum tread depth requirement",
+                "Tire warmers are allowed during dynamic events",
+                "Traction-enhancing chemicals are forbidden",
+                "Tire size is unrestricted",
+                "Dry and wet tires must be from the same manufacturer"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                5
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which statements regarding wheel fasteners are correct?",
+            "answers": [
+                "Hollow wheel studs are forbidden",
+                "Aluminum wheel studs are allowed",
+                "Titanium wheel studs are allowed with justification",
+                "Wheel nuts must include a locking feature",
+                "Aluminum wheel nuts must be hard anodized",
+                "Surface damage may cause rejection",
+                "Safety wire is mandatory"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                5,
+                6
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which bodywork features are not allowed?",
+            "answers": [
+                "External concave curvature in front of the cockpit opening",
+                "Forward-facing sharp edges",
+                "Vent holes in bodywork",
+                "Rounded edges with minimum radius",
+                "Bodywork inside the wheel keep-out zone",
+                "Undertray below floor level",
+                "Bodywork touching suspension under motion"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                5,
+                7
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which statements regarding firewalls are correct?",
+            "answers": [
+                "They must separate the cockpit from fluids",
+                "They must be fire-retardant",
+                "They must be structural",
+                "They must seal the cockpit",
+                "They may contain holes for cables",
+                "They may be omitted in EVs",
+                "They must prevent flame propagation"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                4,
+                5,
+                7
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which statements regarding the floor are correct?",
+            "answers": [
+                "It must be rigid",
+                "It must prevent ground intrusion",
+                "It must be structural",
+                "Flexible floors are forbidden",
+                "It may be interrupted for components",
+                "It must be flat",
+                "It must extend under the entire car"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                4,
+                5
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which statements regarding the side impact structure are correct?",
+            "answers": [
+                "It is part of the primary structure",
+                "It is located between the main hoop and front hoop",
+                "Its height is defined relative to the driver",
+                "It may be replaced by bodywork",
+                "It must meet minimum strength requirements",
+                "It protects against lateral impacts",
+                "It must be symmetric"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                5,
+                6
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which situations require Structural Equivalency Spreadsheet (SES) approval?",
+            "answers": [
+                "Composite monocoque primary structure",
+                "Steel spaceframe",
+                "Non-standard materials in primary structure",
+                "Aluminum tubes in secondary structure",
+                "Carbon roll hoops",
+                "Minor brackets",
+                "Alternative tube sizes"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                5,
+                7
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which statements regarding the steering wheel are correct?",
+            "answers": [
+                "A quick-release mechanism is required",
+                "The perimeter must be continuous",
+                "Concave shapes are forbidden",
+                "Padding is required",
+                "The steering wheel may be detachable",
+                "Variable diameter wheels are forbidden",
+                "It must be electrically grounded"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which statements regarding track width and wheelbase are correct?",
+            "answers": [
+                "A minimum wheelbase is defined",
+                "Front and rear track must be equal",
+                "The smaller track must be at least 75% of the larger",
+                "Track width is unrestricted",
+                "Wheelbase is measured center-to-center",
+                "Changes after inspection require re-inspection",
+                "Track width affects open-wheel compliance"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                5,
+                6,
+                7
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "Which of the following are considered fasteners under the rules?",
+            "answers": [
+                "Bolts",
+                "Screws",
+                "Rivets",
+                "Adhesive tape used structurally",
+                "Zip ties",
+                "Welding",
+                "Bonded joints"
+            ],
+            "correctAnswers": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "hard",
+            "text": "General Technical Inspection philosophy:",
+            "answers": [
+                "Safety has priority over performance",
+                "Passing inspection transfers responsibility to inspectors",
+                "Teams remain responsible at all times",
+                "Rules may be interpreted flexibly for performance",
+                "Inspection ensures compliance at the time of inspection",
+                "Design intent can override written rules",
+                "Unsafe designs are rejected regardless of performance"
+            ],
+            "correctAnswers": [
+                1,
+                3,
+                5,
+                7
+            ],
+            "type": "multi-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "medium",
+            "text": "Rear wheel steering is allowed if limited to:",
+            "answers": [
+                "3\u00b0",
+                "6\u00b0",
+                "10\u00b0",
+                "Unlimited"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "medium",
+            "text": "The rollover protection envelope includes:",
+            "answers": [
+                "Only hoops",
+                "Bodywork",
+                "Primary structure and its planes",
+                "Floor only"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "medium",
+            "text": "Front bodywork above 45\u00b0 must have radius \u2265:",
+            "answers": [
+                "20 mm",
+                "25 mm",
+                "38 mm",
+                "50 mm"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "medium",
+            "text": "Wheel studs must be made of:",
+            "answers": [
+                "Aluminum",
+                "Magnesium",
+                "Steel or titanium",
+                "Any alloy"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "medium",
+            "text": "Unidirectional fibers in outer laminate layers of primary structure are:",
+            "answers": [
+                "Required",
+                "Optional",
+                "Prohibited",
+                "Mandatory for SES"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "medium",
+            "text": "Minimum usable suspension travel:",
+            "answers": [
+                "25 mm",
+                "40 mm",
+                "50 mm",
+                "75 mm"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "medium",
+            "text": "Node-to-node triangulation results in:",
+            "answers": [
+                "Bending loads",
+                "Shear loads",
+                "Tension/compression only",
+                "Torsion only"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "medium",
+            "text": "Wheel track ratio rule states:",
+            "answers": [
+                "Rear \u2265 front",
+                "Front \u2265 rear",
+                "Smaller \u2265 75% of larger",
+                "Must be equal"
+            ],
+            "correctAnswers": 3,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "medium",
+            "text": "Fire-retardant materials must meet:",
+            "answers": [
+                "ISO 26262",
+                "UL94 V-0",
+                "IEC 61131",
+                "ASME"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        },
+        {
+            "category": "T",
+            "difficulty": "medium",
+            "text": "Steering wheel position must be:",
+            "answers": [
+                "Perpendicular to the ground plane",
+                "Below top of the front hoop",
+                "Behind firewall",
+                "Outside cockpit"
+            ],
+            "correctAnswers": 2,
+            "type": "single-choice"
+        }
+    ]
+}
