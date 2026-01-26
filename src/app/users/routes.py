@@ -1,6 +1,7 @@
 import json
 
 from flask import Blueprint, request
+from sqlalchemy import or_
 from db import User, UserAnswer, QuestionAnswer, SessionLocal
 
 users_blueprint: Blueprint = Blueprint("users", __name__, url_prefix="/users")
@@ -20,8 +21,8 @@ def getUsers():
 
 # ------------------------------------------------------------------------------------------------ #
 
-@users_blueprint.route("/<int:user_id>", methods=["GET"])
-def getUserByID(user_id: int):
+@users_blueprint.route("/<string:user_id>", methods=["GET"])
+def getUserByID(user_id: str):
     session = SessionLocal()
     user: User = session.query(User).where(User.id == user_id).one()
     return json.dumps({
@@ -51,8 +52,8 @@ def getUserAnswersByQuestionID(question_id: int):
 
 # ------------------------------------------------------------------------------------------------ #
 
-@users_blueprint.route("/<int:user_id>/answers", methods=["GET"])
-def getUserAnswers(user_id: int):
+@users_blueprint.route("/<string:user_id>/answers", methods=["GET"])
+def getUserAnswers(user_id: str):
     session = SessionLocal()
     return json.dumps({
         "user_answers": [{
@@ -68,8 +69,8 @@ def getUserAnswers(user_id: int):
 
 # ------------------------------------------------------------------------------------------------ #
 
-@users_blueprint.route("/<int:user_id>/answers/<int:question_id>", methods=["GET"])
-def getUserAnswers(user_id: int, question_id: int):
+@users_blueprint.route("/<string:user_id>/answers/<int:question_id>", methods=["GET"])
+def getUserAnswersByQuestion(user_id: str, question_id: int):
     session = SessionLocal()
     return json.dumps({
         "user_answers": [{
@@ -86,10 +87,10 @@ def getUserAnswers(user_id: int, question_id: int):
 
 # ------------------------------------------------------------------------------------------------ #
 
-@users_blueprint.route("/<int:user_id>/answers", methods=["POST"])
-def createUserAnswer(user_id: int):
+@users_blueprint.route("/<string:user_id>/answers", methods=["POST"])
+def createUserAnswer(user_id: str):
     session = SessionLocal()
-    data = request.json()
+    data = request.json
     success: bool = False
     try:
         answer: UserAnswer = UserAnswer(
@@ -100,7 +101,7 @@ def createUserAnswer(user_id: int):
         session.add(answer)
         session.commit()
         success = True
-    except:
+    except Exception:
         session.rollback()
     session.close()
     return json.dumps({
@@ -109,19 +110,20 @@ def createUserAnswer(user_id: int):
 
 # ------------------------------------------------------------------------------------------------ #
 
-@users_blueprint.route("/<int:user_id>/answers/<int:user_answer_id>", methods=["POST"])
-def modifyUserAnswer(user_id: int, user_answer_id: int):
+@users_blueprint.route("/<string:user_id>/answers/<int:user_answer_id>", methods=["POST"])
+def modifyUserAnswer(user_id: str, user_answer_id: int):
     session = SessionLocal()
-    data = request.json()
+    data = request.json
     success: bool = False
     try:
         user_answer: UserAnswer = session.query(UserAnswer).where(UserAnswer.id == user_answer_id).one()
-        if user_answer.user_id != user_id: raise RuntimeError
+        
+        if user_answer.user_id != user_id: raise RuntimeError("User ID mismatch")
 
         user_answer.answer_id = data["answer_id"]
         session.commit()
         success = True
-    except:
+    except Exception:
         session.rollback()
     session.close()
     return json.dumps({
@@ -133,18 +135,18 @@ def modifyUserAnswer(user_id: int, user_answer_id: int):
 @users_blueprint.route("/create", methods=["POST"])
 def createUser():
     session = SessionLocal()
-    data = request.json()
+    data = request.json
     success: bool = False
     try:
         user: User = User(
-            id = data["username"],
+            id = data["username"], 
             email = data["email"],
             password = data["password"]
         )
         session.add(user)
         session.commit()
         success = True
-    except:
+    except Exception:
         session.rollback()
     session.close()
     return json.dumps({
@@ -156,10 +158,29 @@ def createUser():
 @users_blueprint.route("/authenticate", methods=["POST"])
 def authenticateUser():
     session = SessionLocal()
-    data = request.json()
-    user: User = session.query(User).where(User.id == data["username"]).one()
-    return json.dumps({
-        "authorized": user.password == data["password"]
-    })
+    data = request.json
+    
+    authorized = False
+    user_obj = None
+    
+    try:
+        user_obj = session.query(User).filter(
+            or_(
+                User.id == data["username"], 
+                User.email == data["username"]
+            )
+        ).first()
 
-# ------------------------------------------------------------------------------------------------ #
+        if user_obj and user_obj.password == data["password"]:
+            authorized = True
+            
+    except Exception:
+        authorized = False
+        
+    finally:
+        session.close()
+
+    return json.dumps({
+        "authorized": authorized,
+        "user_id": user_obj.id if authorized and user_obj else None
+    })
