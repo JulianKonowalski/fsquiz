@@ -1,8 +1,4 @@
-import dotenv
-
-from db.Database import Database
+from app import createApp
 
 if __name__ == "__main__":
-    dotenv.load_dotenv()
-    db = Database()
-    print(db.insertEvent("test_event"))
+    createApp().run(host="0.0.0.0", port=5000, debug=True)
