@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import dotenv
 import pathlib
@@ -7,6 +8,10 @@ from typing import Tuple
 
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.append(parent_dir)
 
 from src.db.Models import *
 
